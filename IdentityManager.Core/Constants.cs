@@ -28,7 +28,6 @@ namespace TzIdentityManager
         public const string IdMgrScope = "idmgr";
         public const string AdminRoleName = "IdentityManagerAdministrator";
 
-        internal const string AutofacScope = "idm:AutofacScope";
 
         public static readonly TimeSpan DefaultTokenExpiration = TimeSpan.FromHours(10);
 

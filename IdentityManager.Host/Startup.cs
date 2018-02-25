@@ -83,8 +83,8 @@ namespace IdentityManager.Host
                 new IdentityManagerOptions()
                 {
                     SecurityConfiguration = new HostSecurityConfiguration{
-                        HostAuthenticationType = "Cookies",
-                        AdditionalSignOutType = "oidc",
+                        //HostAuthenticationType = "Cookies",
+                        //AdditionalSignOutType = "oidc",
                         RequireSsl = false,
                         ShowLoginButton = true,
                         BearerAuthenticationType ="Bearer",
