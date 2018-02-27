@@ -1,9 +1,9 @@
 ﻿<div class="page-header">
-    <h1>
+    <h3>
         Edit User <span ng-show="user.data.name">: {{user.data.name}}</span>
         <span ng-show="!user.data.name && user.data.username">: {{user.data.username}}</span>
         <small class="subject">{{user.data.subject}}</small>
-    </h1>
+    </h3>
 </div>
 
 <div class="row">
@@ -23,9 +23,9 @@
     <div class="tab-content">
         <div class="tab-pane {{!tab ?'active':''}}">
             <div class="line" ng-repeat="property in user.data.properties">
-                <div class="row">
+                <!--<div class="row">-->
                     <tt-property-editor property="property" set-property="setProperty"></tt-property-editor>
-                </div>
+                <!--</div>-->
             </div>
         </div>
         <div class="tab-pane {{tab==1?'active':''}}" ng-show="user.data.roles">

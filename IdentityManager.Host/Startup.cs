@@ -83,14 +83,12 @@ namespace IdentityManager.Host
                 new IdentityManagerOptions()
                 {
                     SecurityConfiguration = new HostSecurityConfiguration{
-                        //HostAuthenticationType = "Cookies",
-                        //AdditionalSignOutType = "oidc",
                         RequireSsl = false,
                         ShowLoginButton = true,
                         BearerAuthenticationType ="Bearer",
                         AdminRoleName = "admin",
                         RoleClaimType = "role",
-                        Authority =  "http://localhost:5001",//"http://ids.zurich-taxi.com",//
+                        Authority =  "http://localhost:5001",
                         ClientId = "js_oidc",
                         Scope = "openid profile email api1",
                         ResponseType= "id_token token",

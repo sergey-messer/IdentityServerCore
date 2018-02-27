@@ -102,14 +102,12 @@ namespace TzIdentityServer
                 {
                     SecurityConfiguration = new HostSecurityConfiguration
                     {
-                        HostAuthenticationType = "Cookies",
-                        AdditionalSignOutType = "oidc",
                         RequireSsl = true,
                         ShowLoginButton = true,
                         BearerAuthenticationType = "Bearer",
                         AdminRoleName = "admin",
                         RoleClaimType = "role",
-                        Authority = "https://ids.zurich-taxi.com",//"http://localhost:5000",//
+                        Authority = "http://localhost:5000",
                         ClientId = "js_oidc",
                         Scope = "openid profile email api1",
                         ResponseType = "id_token token",
